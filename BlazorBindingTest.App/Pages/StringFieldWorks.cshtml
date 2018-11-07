@@ -1,0 +1,11 @@
+@page "/fieldworks"
+
+<StringFieldNoOp Data="@((BlazorBindingTest.App.Models.StringFieldNoOp)field)"></StringFieldNoOp>
+
+@functions {
+    BlazorBindingTest.App.Models.IField field = new BlazorBindingTest.App.Models.StringFieldNoOp
+    {
+        Id = Guid.NewGuid(),
+        Value = "This is a working string value"
+    };
+}

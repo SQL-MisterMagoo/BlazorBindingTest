@@ -1,0 +1,6 @@
+<input type="text" bind="@(((BlazorBindingTest.App.Models.StringField)Data).Value)" />
+
+@functions {
+    [Parameter]
+    private BlazorBindingTest.App.Models.IField Data { get; set; }
+}

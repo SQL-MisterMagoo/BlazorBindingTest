@@ -1,0 +1,11 @@
+@page "/fieldbyinterface"
+
+<StringFieldByInterface Data="@field"></StringFieldByInterface>
+
+@functions {
+    BlazorBindingTest.App.Models.IField field = new BlazorBindingTest.App.Models.StringField
+    {
+        Id = Guid.NewGuid(),
+        Value = "This is a failing string value passed as its interface"
+    };
+}
